@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  
+}
+
+footer p {
+  color: white;
+  margin: 40px;
+}
+
+.btn-primary {
+        border-radius: 60px;
+        background-color: #25d366;
+}
