@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>ArO Tienda-Boca</title>
+    <link rel="icon" href="assets/images/logo2.jpeg">
+
+
+    <!-- Additional CSS Files -->
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+    
+    <body>
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ********************************************************************* -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/arriba.jpg">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                        <!--********************* MENU DESPLEGABLE *****************************************************-->
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End *********************************************************************** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+<div class="main-banner" id="top">
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="assets/images/Logo.jpg" class="card-img-top" alt="Nombre del Producto">
+                <input type="checkbox" id="productCheckbox" class="position-absolute bottom-0 end-0 m-2 rounded-circle">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Producto</h5>
+                    <p class="card-text">Precio: $99.99</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <div>
+                        <label for="productQuantity">Cantidad:</label>
+                        <select id="productQuantity" class="form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <!-- Agrega más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="enviarMensajeWhatsApp('Nombre del Producto', 99.99)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Repite esta estructura para cada producto -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    function enviarMensajeWhatsApp(nombre, precio) {
+        const cantidad = document.getElementById('productQuantity').value;
+        const mensaje = `¡Hola! Me gustaría comprar ${cantidad} de "${nombre}" por un total de $${precio * cantidad}.`;
+        const numeroWhatsApp = '+5358688185'; // Tu número de WhatsApp
+
+        // Generar el enlace de WhatsApp con el mensaje
+        const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+
+        // Redirigir a WhatsApp
+        window.location.href = enlaceWhatsApp;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="container-fluid">
+   <footer>
+      <!-- Tu contenido del footer aquí -->
+      <p>Esto es una página creada por ArO para la compra y venta de productos varios</p>
+    
+      <p>Si esta interesado en la creación de páginas web personalizadas, promoción o venta de algún producto no dude en contactarme😁</p>
+      <p>👇👇👇</p>
+    <a id="o" href="https://api.whatsapp.com/send?phone=+5358688185&text=P%C3%A1gina%20web" class="btn btn-primary btn-lg">
+      WhatsApp
+    </a>
+   </footer>
+</div>
+    
+    
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
