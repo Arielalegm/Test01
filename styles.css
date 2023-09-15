@@ -1,0 +1,24 @@
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 40px;
+}
+
+#o {
+        border-radius: 60px;
+        background-color: #25d366;
+}
+
+.letras {
+  text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 60px;
+      color:rgb(80, 80, 80)
+}
+
+.arologo {
+  border-radius: 100%;
+}
