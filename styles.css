@@ -35,3 +35,7 @@ footer p {
   background-color: #f1f1f1; /* Color de fondo opcional */
   padding: 15px; /* Espacio alrededor del objeto sticky */
 }
+
+header {
+  position: fixed;
+}
