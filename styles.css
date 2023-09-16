@@ -22,3 +22,7 @@ footer p {
 .arologo {
   border-radius: 100%;
 }
+
+.container {
+  margin-top: 25px;
+}
