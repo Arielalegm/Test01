@@ -27,15 +27,6 @@ footer p {
   margin-top: 25px;
 }
 
-
-#sticky {
-  position: -webkit-sticky; /* Para navegadores webkit */
-  position: sticky;
-  top: 0; /* La posición en la que se mantendrá fijo (en este caso, arriba) */
-  background-color: #f1f1f1; /* Color de fondo opcional */
-  padding: 15px; /* Espacio alrededor del objeto sticky */
-}
-
 header {
   position: fixed;
 }
